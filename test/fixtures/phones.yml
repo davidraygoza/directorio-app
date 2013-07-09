@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  numbers: MyString
+  dependency_id: 1
+  comments: MyString
+
+two:
+  name: MyString
+  numbers: MyString
+  dependency_id: 1
+  comments: MyString

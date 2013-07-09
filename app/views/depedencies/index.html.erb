@@ -1,0 +1,23 @@
+<h1>Listing depedencies</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @depedencies.each do |depedency| %>
+  <tr>
+    <td><%= depedency.name %></td>
+    <td><%= link_to 'Show', depedency %></td>
+    <td><%= link_to 'Edit', edit_depedency_path(depedency) %></td>
+    <td><%= link_to 'Destroy', depedency, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Depedency', new_depedency_path %>
