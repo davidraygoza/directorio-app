@@ -1,4 +1,7 @@
 DirectorioApp::Application.routes.draw do
+  resources :dependencies
+
+
   resources :phones
 
 

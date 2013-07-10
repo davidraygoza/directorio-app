@@ -25,7 +25,7 @@ class PhonesController < ApplicationController
   # GET /phones/new.json
   def new
     @phone = Phone.new
-
+    @dependencies= Dependency.all.map{|dependency|[dependency.name,dependency.id]}
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @phone }
@@ -35,6 +35,7 @@ class PhonesController < ApplicationController
   # GET /phones/1/edit
   def edit
     @phone = Phone.find(params[:id])
+    @dependencies= Dependency.all.map{|dependency|[dependency.name,dependency.id]}
   end
 
   # POST /phones

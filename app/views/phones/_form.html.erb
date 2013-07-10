@@ -21,7 +21,8 @@
   </div>
   <div class="field">
     <%= f.label :dependency_id %><br />
-    <%= f.number_field :dependency_id %>
+     	<%= f.select   :dependency_id,@dependencies %>
+   
   </div>
   <div class="field">
     <%= f.label :comments %><br />
