@@ -220,7 +220,7 @@ $(document).ready(function() {
 	//------------- Tooltips -------------//
 
 	//top tooltip
-	$('.tip').qtip({
+	/*$('.tip').qtip({
 		content: false,
 		position: {
 			my: 'bottom center',
@@ -269,7 +269,7 @@ $(document).ready(function() {
 		style: {
 			classes: 'ui-tooltip-tipsy'
 		}
-	});
+	});*/
 
 	//--------------- Boostrap tooltips ------------------//
     $('.btip').tooltip();
@@ -282,7 +282,7 @@ $(document).ready(function() {
 		var y = date.getFullYear();
 		
 		//front page calendar
-		$('#calendar').fullCalendar({
+		/*$('#calendar').fullCalendar({
 			//theme: true,
 			header: {
 				left: 'title,today',
@@ -342,7 +342,7 @@ $(document).ready(function() {
 					url: 'http://google.com/'
 				}
 			]
-		});
+		});*/
 	});
 
 	/* initialize the external events
@@ -372,7 +372,7 @@ $(document).ready(function() {
 	/* initialize the calendar
 	-----------------------------------------------------------------*/
 	
-	$('#calendar-events').fullCalendar({
+	/*$('#calendar-events').fullCalendar({
 		header: {
 			left: 'title,today',
 			center: 'prev,next',
@@ -406,16 +406,16 @@ $(document).ready(function() {
 
 	//------------- Prettify code  -------------//
 	prettyPrint();
-
+*/
 	//------------- Tags plugin  -------------//
 	
-	$("#tags").select2({
+	/*$("#tags").select2({
 		tags:["red", "green", "blue", "orange"]
 	});
-
+*/
 	//------------- placeholder fallback  -------------//
 	/*$('input[placeholder], textarea[placeholder]').watermark();*/
-	$('input[placeholder], textarea[placeholder]').placeholder();
+	//$('input[placeholder], textarea[placeholder]').placeholder();
 
 	//------------- Elastic textarea -------------//
 	if ($('textarea').hasClass('elastic')) {
@@ -436,7 +436,7 @@ $(document).ready(function() {
 	}
 
 	//------------- Masked input fields -------------//
-	$("#mask-phone").mask("(999) 999-9999", {completed:function(){alert("Callback action after complete");}});
+	/*$("#mask-phone").mask("(999) 999-9999", {completed:function(){alert("Callback action after complete");}});
 	$("#mask-phoneExt").mask("(999) 999-9999? x99999");
 	$("#mask-phoneInt").mask("+40 999 999 999");
 	$("#mask-date").mask("99/99/9999");
@@ -444,9 +444,9 @@ $(document).ready(function() {
 	$("#mask-productKey").mask("a*-999-a999", { placeholder: "*" });
 	$("#mask-eyeScript").mask("~9.99 ~9.99 999");
 	$("#mask-percent").mask("99%");
-
+*/
 	//------------- I button  -------------//
-	$(".ibutton").iButton({
+	/*$(".ibutton").iButton({
 		 labelOn: "ON",
 		 labelOff: "OFF",
 		 enableDrag: false
@@ -462,7 +462,7 @@ $(document).ready(function() {
 		 enableDrag: false
 	});
 
-
+*/
 	//------------- Check all checkboxes  -------------//
 	
 	$("#masterCh").click(function() {
@@ -479,7 +479,7 @@ $(document).ready(function() {
 	});
 	
 	//------------- Spinners with steps  -------------//
-	$('#ns_0').stepper();
+	/*$('#ns_0').stepper();
 	$('#ns_1').stepper({
 		min:-100, 
 		max:100, 
@@ -494,7 +494,7 @@ $(document).ready(function() {
 		step:0.5, 
 		format:'currency'
 	});
-
+*/
 	//------------- Colorpicker -------------//
 	if($('div').hasClass('picker')){
 		$('.picker').farbtastic('#color');
@@ -510,21 +510,21 @@ $(document).ready(function() {
     });
 
     //------------- Time entry (picker) -------------//
-	$('#timepicker').timeEntry({
+	/*$('#timepicker').timeEntry({
 		show24Hours: true,
 		spinnerImage: ''
-	});
-	$('#timepicker').timeEntry('setTime', '22:15')
+	});*/
+	//$('#timepicker').timeEntry('setTime', '22:15')
 
 	//------------- Select plugin -------------//
-	$("#select1").select2();
-	$("#select2").select2();
+	//$("#select1").select2();
+	//$("#select2").select2();
 
 	//--------------- Dual multi select ------------------//
-	$.configureBoxes();
+	//$.configureBoxes();
 
 	//--------------- Tinymce ------------------//
-	$('textarea.tinymce').tinymce({
+/*	$('textarea.tinymce').tinymce({
 		// Location of TinyMCE script
 		script_url : 'plugins/tiny_mce/tiny_mce.js',
 
@@ -557,9 +557,9 @@ $(document).ready(function() {
 			staffid : "991234"
 		}
 	});
-
+*/
 	//--------------- Form validation ------------------//
-
+/*
     $("#form-validate").validate({
     	rules: {
 			required: "required",
@@ -695,7 +695,7 @@ $(document).ready(function() {
 			gender: "Choise a gender"
 		}	
     });
-	
+	*/
 	//--------------- button state demo ------------------//
     $('#fat-btn').click(function () {
         var btn = $(this)
@@ -1076,13 +1076,13 @@ $(document).ready(function() {
 	})
 
 	//--------------- Prettyphoto ------------------//
-	$("a[rel^='prettyPhoto']").prettyPhoto({
+	/*$("a[rel^='prettyPhoto']").prettyPhoto({
 		default_width: 800,
 		default_height: 600,
 		theme: 'facebook',
 		social_tools: false,
 		show_title: false,
-	});
+	});*/
 	//--------------- Gallery & lazzy load & jpaginate ------------------//
 	$(function() {
 		//hide the action buttons
@@ -1302,12 +1302,12 @@ $(document).ready(function() {
 	});
 
 	//------------- Smart Wizzard  -------------//	
-  	$('#wizard').smartWizard({
+  /*	$('#wizard').smartWizard({
   		transitionEffect: 'fade', // Effect on navigation, none/fade/slide/
   		onLeaveStep:leaveAStepCallback,
         onFinish:onFinishCallback
     });
-
+*/
     function leaveAStepCallback(obj){
         var step = obj;
         step.find('.stepNumber').stop(true, true).remove();
@@ -1329,11 +1329,11 @@ $(document).ready(function() {
 		});
     }
 
-    $('#wizard-validation').smartWizard({
+   /* $('#wizard-validation').smartWizard({
   		transitionEffect: 'fade', // Effect on navigation, none/fade/slide/
   		onLeaveStep:leaveAStepCallbackValidation,
         onFinish:onFinishCallbackValidaton
-    });
+    });*/
 
     function leaveAStepCallbackValidation(obj){
         var step = obj;
@@ -1434,14 +1434,14 @@ $(document).ready(function() {
     }
 
     //------------- Elfinder file manager  -------------//
-    var elf = $('#elfinder').elfinder({
+    /*var elf = $('#elfinder').elfinder({
 		// lang: 'ru',             // language (OPTIONAL)
 		url : 'php/connector.php'  // connector URL (REQUIRED)
 	}).elfinder('instance');
-
+*/
     //------------- Plupload php upload  -------------//
     // Setup html4 version
-	$("#html4_uploader").pluploadQueue({
+/*	$("#html4_uploader").pluploadQueue({
 		// General settings
 		runtimes : 'html4', 
 		url : 'php/upload.php',
@@ -1466,7 +1466,7 @@ $(document).ready(function() {
 			{title : "Zip files", extensions : "zip,avi"}
 		]
 	});
-
+*/
 
 	//------------- Search forms  submit handler  -------------//
 	$('#search-form').submit(function() {
@@ -1493,7 +1493,7 @@ $(document).ready(function() {
 	
 	//------------- Uniform  -------------//
 	//add class .nostyle if not want uniform to style field
-	$("input, textarea, select").not('.nostyle').uniform();
+	//*$("input, textarea, select").not('.nostyle').uniform();
 
 	//remove loadstate class from body and show the page
 	setTimeout('$("html").removeClass("loadstate")',500);
