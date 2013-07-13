@@ -1,16 +1,23 @@
-<h1>Listing phones</h1>
-
-<table>
+<div class="box gradient">
+<div class="title">
+	<h4>
+	<span>Telefonos</span>
+	</h4>
+</div>
+<div class="content noPad clearfix">
+  <table cellpadding="0" cellspacing="0" border="0" class="responsive dynamicTable display table table-bordered" width="100%">
+  <thead>
   <tr>
-    <th>Name</th>
-    <th>Numbers</th>
-    <th>Dependency</th>
-    <th>Comments</th>
+    <th>Nombre</th>
+    <th>Numero</th>
+    <th>Dependencia</th>
+    <th>Comentarios</th>
     <th></th>
     <th></th>
     <th></th>
   </tr>
-
+  </thead>
+   <tbody>
 <% @phones.each do |phone| %>
   <tr>
     <td><%= phone.name %></td>
@@ -22,8 +29,20 @@
     <td><%= link_to 'Destroy', phone, method: :delete, data: { confirm: 'Are you sure?' } %></td>
   </tr>
 <% end %>
+</tbody>
+<tfoot>
+                                            <tr>
+                                                <th>Nombre</th>
+                                                <th>Numero</th>
+                                                <th>Dependencia</th>
+                                                <th>Comentarios</th>
+                                                <th></th>
+                                                <th></th>
+                                                 <th></th>
+                                            </tr>
+                                        </tfoot>
 </table>
-
-<br />
+</div>
+</div>
 
 <%= link_to 'New Phone', new_phone_path %>
