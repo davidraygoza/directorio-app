@@ -24,9 +24,9 @@
     <td><%= phone.numbers %></td>
     <td><%= phone.dependency_id %></td>
     <td><%= phone.comments %></td>
-    <td><%= link_to 'Show', phone %></td>
-    <td><%= link_to 'Edit', edit_phone_path(phone) %></td>
-    <td><%= link_to 'Destroy', phone, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td><i class='icon-eye-open'></i>  <%= link_to 'Show', phone %></td>
+    <td><i class="icon-pencil"> </i><%= link_to 'Edit', edit_phone_path(phone) %></td>
+    <td><i class="icon-trash"> </i><%= link_to 'Destroy', phone, method: :delete, data: { confirm: 'Are you sure?' } %></td>
   </tr>
 <% end %>
 </tbody>

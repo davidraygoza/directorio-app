@@ -1127,24 +1127,24 @@ $(document).ready(function() {
 		});
 
 	    /* initiate lazyload defining a custom event to trigger image loading  */
-	    $("ul#itemContainer li img").lazyload({
+	   /* $("ul#itemContainer li img").lazyload({
 	        event : "turnPage",
 	        effect : "fadeIn"
-	    });
+	    });*/
 	    /* initiate plugin */
-	    $("div.holder").jPages({
+	  /*  $("div.holder").jPages({
 	        containerID : "itemContainer",
 	        animation   : "fadeInUp",
 	        perPage		: 16,
 	        scrollBrowse   : true, //use scroll to change pages
 	        keyBrowse   : true,
 	        callback    : function( pages ,items ){
-	            /* lazy load current images */
+	            // lazy load current images 
 	            items.showing.find("img").trigger("turnPage");
-	            /* lazy load next page images */
+	            // lazy load next page images 
 	            items.oncoming.find("img").trigger("turnPage");
 	        }
-	    });
+	    });*/
 	});
 
 	//--------------- Data tables ------------------//

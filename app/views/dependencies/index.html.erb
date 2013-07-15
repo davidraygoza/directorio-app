@@ -1,23 +1,40 @@
-<h1>Listing dependencies</h1>
-
-<table>
+<div class="box gradient">
+<div class="title">
+	<h4>
+	<span>Dependencias</span>
+	</h4>
+</div>
+<div class="content noPad clearfix">
+  <table  cellpadding="0" cellspacing="0" border="0" class="responsive dynamicTable display table table-bordered" width="100%">
+  <thead>
   <tr>
-    <th>Name</th>
+     <th>Nombre</th>
     <th></th>
     <th></th>
     <th></th>
   </tr>
-
+  </thead>
+   <tbody>
 <% @dependencies.each do |dependency| %>
   <tr>
     <td><%= dependency.name %></td>
-    <td><%= link_to 'Show', dependency %></td>
-    <td><%= link_to 'Edit', edit_dependency_path(dependency) %></td>
-    <td><%= link_to 'Destroy', dependency, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td>  <i class='icon-eye-open'></i> <%= link_to " Detalle", dependency %></td>
+    <td><i class="icon-pencil"> </i> <%= link_to 'Modificar', edit_dependency_path(dependency) %></td>
+    <td><i class="icon-trash"> </i>  <%= link_to 'Borrar', dependency, method: :delete, data: { confirm: 'Are you sure?' } %></td>
   </tr>
 <% end %>
+</tbody>
+<tfoot>
+	<tr>
+	<th>Nombre</th>
+    <th></th>
+    <th></th>
+    <th></th>
+	</tr>
+</tfoot>
 </table>
 
-<br />
+</div>
+</div>
 
-<%= link_to 'New Dependency', new_dependency_path %>
+<%= link_to 'Nueva dependencia', new_dependency_path,:class=>'btn btn-info' %>
