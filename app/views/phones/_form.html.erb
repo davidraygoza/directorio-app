@@ -12,23 +12,23 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :name %><br />
+    <%= f.label :name, 'Nombre' %><br />
     <%= f.text_field :name %>
   </div>
   <div class="field">
-    <%= f.label :numbers %><br />
+    <%= f.label :numbers,'Telefonos' %><br />
     <%= f.text_field :numbers %>
   </div>
   <div class="field">
-    <%= f.label :dependency_id %><br />
+    <%= f.label :dependency_id ,'Dependencia'%><br />
      	<%= f.select   :dependency_id,@dependencies %>
    
   </div>
   <div class="field">
-    <%= f.label :comments %><br />
+    <%= f.label :comments,'Comentarios' %><br />
     <%= f.text_field :comments %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+      <%= f.submit 'Guardar',:class=>'btn  btn-info' %>
   </div>
 <% end %>
