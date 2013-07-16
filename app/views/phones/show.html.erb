@@ -20,6 +20,5 @@
   <%= @phone.comments %>
 </p>
 
-
-<%= link_to 'Edit', edit_phone_path(@phone) %> |
-<%= link_to 'Back', phones_path %>
+<%= link_to 'Modificar',  edit_phone_path(@phone), :class=>'btn btn-mini '%>
+<%= link_to 'Regresar',  phones_path , :class=>'btn btn-mini '%>
