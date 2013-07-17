@@ -22,7 +22,7 @@
   <tr>
     <td><%= phone.name %></td>
     <td><%= phone.numbers %></td>
-    <td><%= phone.dependency_id %></td>
+    <td><%= phone.dependency.name %></td>
     <td><%= phone.comments %></td>
     <td><i class='icon-eye-open'></i>  <%= link_to 'Show', phone %></td>
     <td><i class="icon-pencil"> </i><%= link_to 'Edit', edit_phone_path(phone) %></td>
